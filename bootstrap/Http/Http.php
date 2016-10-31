@@ -91,6 +91,8 @@ class Http
     */
     public static function server($key = null, $value = null)
     {
+        $key = strtoupper($key);
+        
         if(is_null($key)) return $_SERVER;
 
         if(is_null($value))

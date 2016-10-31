@@ -7,6 +7,8 @@
  * @web      <http://burakdemirtas.org>
  */
 
+namespace Mubu\Uri;
+
 use Mubu\Http\Http;
 
 class Uri

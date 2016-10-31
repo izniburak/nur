@@ -10,6 +10,7 @@
 use Mubu\Http\Http;
 use Mubu\Http\Session;
 use Mubu\Load\AutoLoad;
+use Mubu\Uri\Uri;
 
 ob_start();
 session_start();
@@ -28,7 +29,6 @@ define('APP_KEY', $config['key']);
 switch (MODE)
 {
     case 'development':
-        error_reporting(-1);
         ini_set('display_errors', 1);
         break;
     case 'testing':
@@ -52,7 +52,6 @@ if(empty(session::get('_token')))
 define('_TOKEN', session::get('_token'));
 
 require_once ROOT . '/bootstrap/route/route.php';
-require_once ROOT . '/bootstrap/uri/uri.php';
 
 AutoLoad::getInstance();
 Uri::getInstance();
