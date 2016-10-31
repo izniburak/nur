@@ -14,13 +14,13 @@ use Mubu\Exception\ExceptionHandler;
 class Load
 {
     private static $instance = null;
-    public static $library, $model = [];
+    public $library, $model = [];
 
     public function __construct() { }
 
     public static function __callStatic($name, $val)
     {
-        return self::${$name}($val[0], $val[1]);
+        return $this->{$name}($val[0], $val[1]);
     }
 
     /**
@@ -73,10 +73,10 @@ class Load
             if(!class_exists($name))
                 require $file;
 
-            if (!isset(self::$model[$name]))
-                self::$model[$name] = new $class();
+            if (!isset($this->model[$name]))
+                $this->model[$name] = new $class();
 
-            return self::$model[$name];
+            return $this->model[$name];
         }
         else
             throw new ExceptionHandler('<h2>Oppss! File Not Found.</h2> <b>Model::' . $name . '</b> not found.');
@@ -98,17 +98,17 @@ class Load
             if(!class_exists($name))
                 require $file;
 
-            if (!isset(self::$library[$name]) && is_null($params))
-                self::$library[$name] = new $class();
+            if (!isset($this->library[$name]) && is_null($params))
+                $this->library[$name] = new $class();
 
-            elseif(!isset(self::$library[$name]) && !is_null($params))
+            elseif(!isset($this->library[$name]) && !is_null($params))
 
                 if(is_array($params))
-                    self::$library[$name] = eval("\$a = new $class('" . implode("', '", $params) . "'); return \$a;");
+                    $this->library[$name] = eval("\$a = new $class('" . implode("', '", $params) . "'); return \$a;");
                 else
-                    self::$library[$name] = new $class($params);
+                    $this->library[$name] = new $class($params);
 
-            return self::$library[$name];
+            return $this->library[$name];
         }
         else
             throw new ExceptionHandler('<h2>Oppss! File Not Found.</h2> <b>Library::' . $name . '</b> not found.');
@@ -132,6 +132,6 @@ class Load
 
     public function __destruct()
     {
-        self::$library = self::$model = [];
+        $this->library = $this->model = [];
     }
 }
