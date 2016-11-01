@@ -16,7 +16,7 @@ ob_start();
 session_start();
 
 global $config;
-require_once 'app/config.php';
+require_once realpath(__DIR__ . '/../app/config.php');
 
 define('MUBU_VERSION', '1.0');
 define('BASE_FOLDER', trim($config['folder'], '/'));
@@ -51,12 +51,12 @@ if(empty(session::get('_token')))
 
 define('_TOKEN', session::get('_token'));
 
-require_once ROOT . '/bootstrap/route/route.php';
+require_once realpath(__DIR__ . '/../bootstrap/route/route.php');
 
 AutoLoad::getInstance();
 Uri::getInstance();
 
-require_once ROOT . '/app/routes.php';
+require_once realpath(__DIR__ . '/../app/routes.php');
 Route::run();
 
 ob_end_flush();

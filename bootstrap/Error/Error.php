@@ -24,7 +24,7 @@ class Error
 
         if(is_null($page))
         {
-            $file = '/app/views/errors/index.php';
+            $file = realpath(__DIR__ . '/../../app/views/errors/index.php');
             if (file_exists($file))
             {
                 require $file;
@@ -35,7 +35,7 @@ class Error
         }
         else
         {
-            $file = '/app/views/errors/' . $page . '.php';
+            $file = realpath(__DIR__ . '/../../app/views/errors/' . $page . '.php');
             if (file_exists($file))
             {
                 require $file;

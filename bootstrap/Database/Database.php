@@ -68,7 +68,7 @@ class Database
 
             if($this->db_name != ':memory:')
             {
-                $dbFolder = ROOT . '/storage/database/';
+                $dbFolder = realpath(__DIR__ . '/../../storage/database/');
                 if(!file_exists($dbFolder . $this->db_name))
                     touch($dbFolder . $this->db_name);
             }

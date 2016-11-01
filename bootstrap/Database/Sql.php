@@ -618,7 +618,7 @@ class Sql
 
         $name = md5($sql);
         $finish = time() + (self::$cache);
-        $file = ROOT . '/storage/cache/sql/' . $name . '.cache';
+        $file = realpath(__DIR__ . '/../../storage/cache/sql/' . $name . '.cache');
         $file = fopen($file, 'w');
 
         if($file)
@@ -630,7 +630,7 @@ class Sql
         if (is_null(self::$cache)) return false;
 
         $name = md5($sql);
-        $file = ROOT . '/storage/cache/sql/' . $name . '.cache';
+        $file = realpath(__DIR__ . '/../../storage/cache/sql/' . $name . '.cache');
 
         if (file_exists($file))
         {

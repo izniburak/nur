@@ -44,7 +44,7 @@ class Load
     public static function view($name, $data = null)
     {
         $name = strtolower($name);
-        $file = ROOT . '/app/views/' . $name . '.php';
+        $file = realpath(__DIR__ . '/../../app/views/' . $name . '.php');
 
         if (file_exists($file))
         {
@@ -66,7 +66,7 @@ class Load
     {
         $name = strtolower($name);
         $class = ($autoLoad ? $name : 'App\Models\\' . $name);
-        $file = ROOT . '/app/models/' . $name . '.php';
+        $file = realpath(__DIR__ . '/../../app/models/' . $name . '.php');
 
         if (file_exists($file))
         {
@@ -91,7 +91,7 @@ class Load
     {
         $name = strtolower($name);
         $class = ($autoLoad ? $name : 'App\Libraries\\' . $name);
-        $file = ROOT . '/app/libraries/' . $name . '.php';
+        $file = realpath(__DIR__ . '/../../app/libraries/' . $name . '.php');
 
         if (file_exists($file))
         {
@@ -122,7 +122,7 @@ class Load
     public static function helper($name)
     {
         $name = strtolower($name);
-        $file = ROOT . '/app/helpers/' . $name . '.php';
+        $file = realpath(__DIR__ . '/../../app/helpers/' . $name . '.php');
 
         if (file_exists($file))
             require $file;

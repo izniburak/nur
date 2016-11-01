@@ -23,11 +23,11 @@ class Blade
     */
     public function __construct()
     {
-        $cache = ROOT . self::$templateFolder . '/blade';
+        $cache = realpath(__DIR__ . '/../..' . self::$templateFolder . '/blade');
 
         if(!file_exists($cache))
             mkdir($cache, 0755);
-        $views = ROOT . '/app/views';
+        $views = realpath(__DIR__ . '/../../app/views');
 
         self::$class = new BladeTemplate($views, $cache);
     }

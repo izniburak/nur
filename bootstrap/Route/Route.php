@@ -280,10 +280,10 @@ class Route
             $parts = explode('/', $command);
             $segments = explode('@', end($parts));
 
-            $controllerFile = ROOT . '/app/controllers/' . strtolower(str_replace(self::$namespaces['controllers'], '', $segments[0])) . '.php';
+            $controllerFile = realpath(__DIR__ . '/../../app/Controllers/' . strtolower(str_replace(self::$namespaces['controllers'], '', $segments[0])) . '.php');
 
             if(count($parts) > 1)
-                $controllerFile = ROOT . '/app/controllers/' . $parts[0] . '/' . strtolower($segments[0]).'.php';
+                $controllerFile = realpath(__DIR__ . '/../../app/Controllers/' . $parts[0] . '/' . strtolower($segments[0]).'.php');
 
             if(!file_exists($controllerFile))
                 throw new ExceptionHandler('<h2>Opps! Error</h2> <b>' . $segments[0] . '</b> Controller File is not found. Please, check file.');
@@ -349,10 +349,10 @@ class Route
                 $parts = explode('/', $command);
                 $segments = explode('@', end($parts));
 
-                $middlewareFile =     ROOT . '/app/middlewares/' . strtolower(str_replace(self::$namespaces['middlewares'], '', $segments[0])) . '.php';
+                $middlewareFile = realpath(__DIR__ . '/../../app/Middlewares/' . strtolower(str_replace(self::$namespaces['middlewares'], '', $segments[0])) . '.php');
 
                 if(count($parts) > 1)
-                    $middlewareFile = ROOT . '/app/middlewares/' . $parts[0] . '/' . strtolower(str_replace(self::$namespaces['middlewares'], '', $segments[0])) .'.php';
+                    $middlewareFile = realpath(__DIR__ . '/../../app/Middlewares/' . $parts[0] . '/' . strtolower(str_replace(self::$namespaces['middlewares'], '', $segments[0])) .'.php');
 
                 if(!file_exists($middlewareFile))
                     throw new ExceptionHandler('<h2>Oppps!</h2><b>' . $segments[0] . '</b> middleware file is not found. Please, check file.');
@@ -440,7 +440,7 @@ class Route
     */
     public static function controller($route, $controller)
     {
-        $controllerFile = ROOT . '/app/controllers/' . strtolower($controller) . '.php';
+        $controllerFile = realpath(__DIR__ . '/../../app/Controllers/' . strtolower($controller) . '.php');
 
         if(file_exists($controllerFile))
         {

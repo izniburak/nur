@@ -12,7 +12,7 @@ use Phpmig\Adapter,
     Illuminate\Database\Capsule\Manager as Capsule;
 
 global $config;
-require 'app/config.php';
+require realpath(__DIR__ . '/../../../app/config.php');
 
 $container = new Container();
 
@@ -31,7 +31,7 @@ $container['phpmig.adapter'] = function($c) {
     return new Adapter\Illuminate\Database($c['db'], 'mubu_migrations');
 };
 
-$container['phpmig.migrations_path'] = 'app/Migrations';
+$container['phpmig.migrations_path'] = realpath(__DIR__ . '/../../../app/Migrations');
 
 $container['schema'] = function($c) {
     return $c['db']->schema();
