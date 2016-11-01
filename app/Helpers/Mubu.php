@@ -20,6 +20,15 @@ if (!function_exists('view'))
   }
 }
 
+### Blade::make function
+if (!function_exists('blade'))
+{
+  function blade($view = null, $data = [], $mergeData = [])
+  {
+  	return blade::make($view, $data, $mergeData);
+  }
+}
+
 ### Load::library function
 if (!function_exists('library'))
 {
@@ -56,19 +65,10 @@ if (!function_exists('error'))
   }
 }
 
-### Blade::make function
-if (!function_exists('blade'))
-{
-  function blade($view = null, $data = [], $mergeData = [])
-  {
-  	return blade::make($view, $data, $mergeData);
-  }
-}
-
 ### token generator function
-if (!function_exists('token'))
+if (!function_exists('getToken'))
 {
-	function token()
+	function getToken()
 	{
 		return _TOKEN;
 	}

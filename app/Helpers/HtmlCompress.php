@@ -11,7 +11,6 @@
  {
  	function htmlCompress($html)
  	{
- 		$html = str_replace(["\n", "\t", "\r", "   "], '', $html);
- 		return $html;
+ 		return str_replace(["\n", "\t", "\r", "   "], '', $html);
  	}
  }
