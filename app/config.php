@@ -48,7 +48,7 @@ $config = [
 
 	'autoload' => [
 		'helper'	=> ['mubu', 'global'],
-		'library'	=> [],
+		'library'	=> ['session', 'cookie', 'http', 'uri'],
 		'model'		=> []
 	],
 
