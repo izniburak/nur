@@ -9,7 +9,7 @@
 
 namespace App\Libraries;
 
-use Mubu\Http\Input;
+use Mubu\Http\Http;
 
 class Cache
 {
@@ -18,8 +18,8 @@ class Cache
 	public function __construct()
 	{
 		$date = date('dmY-His');
-		$fileName = md5('%%-' . input::server('REQUEST_URI') . time()) . '_' . $date . '.cache';
-		$path = ROOT . '/storage/cache/html/';
+		$fileName = md5('%%-' . http::server('REQUEST_URI') . time()) . '_' . $date . '.cache';
+		$path = realpath(__DIR__ . '/../../storage/cache/html/');
 
 		if (!file_exists($path))
 			$creatPath = mkdir($path, 0777);
