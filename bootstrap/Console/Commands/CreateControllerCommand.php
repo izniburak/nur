@@ -56,7 +56,9 @@ class CreateControllerCommand extends Command
                 );
             }
             else 
-                throw new ExceptionHandler("File already exists! (".$name.")");
+                $output->writeln(
+                    "\n" . ' <error>-Error!</error> Controller already exists! ('.$name.')'
+                );
         }
 
         return;

@@ -62,7 +62,9 @@ class CreateModelCommand extends Command
                 );
             }
             else 
-                throw new ExceptionHandler("File already exists! (".$name.")");
+                $output->writeln(
+                    "\n" . ' <error>-Error!</error> Model already exists! ('.$name.')'
+                );
         }
 
         return;

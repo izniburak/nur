@@ -56,7 +56,9 @@ class CreateMiddlewareCommand extends Command
                 );
             }
             else 
-                throw new ExceptionHandler("File already exists! (".$name.")");
+                $output->writeln(
+                    "\n" . ' <error>-Error!</error> Middleware already exists! ('.$name.')'
+                );
         }
 
         return;
