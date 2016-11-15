@@ -11,6 +11,7 @@ use Mubu\Http\Http;
 use Mubu\Http\Session;
 use Mubu\Load\AutoLoad;
 use Mubu\Uri\Uri;
+use Mubu\Exception\ExceptionHandler;
 
 ob_start();
 session_start();
@@ -23,7 +24,7 @@ define('BASE_FOLDER', trim($config['folder'], '/'));
 define('ADMIN_FOLDER', trim($config['admin'], '/'));
 define('MODE', strtolower($config['mode']));
 define('IP_ADDRESS', http::server('REMOTE_ADDR'));
-define('ROOT', http::server('DOCUMENT_ROOT') . (BASE_FOLDER == '' ? '' : '/' . BASE_FOLDER));
+define('ROOT', getcwd());
 define('APP_KEY', $config['key']);
 
 switch (MODE)
@@ -34,10 +35,7 @@ switch (MODE)
     case 'testing':
     case 'production':
         ini_set('display_errors', 0);
-        if (version_compare(PHP_VERSION, '5.3', '>='))
-            error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
-        else
-            error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT & ~E_USER_NOTICE);
+        error_reporting(E_ALL & ~E_NOTICE & ~E_DEPRECATED & ~E_STRICT & ~E_USER_NOTICE & ~E_USER_DEPRECATED);
         break;
     default:
         header('HTTP/1.1 503 Service Unavailable.', TRUE, 503);
@@ -51,7 +49,7 @@ if(empty(session::get('_token')))
 
 define('_TOKEN', session::get('_token'));
 
-require_once realpath(__DIR__ . '/../bootstrap/route/route.php');
+require_once realpath(__DIR__ . '/../bootstrap/Route/Route.php');
 
 AutoLoad::getInstance();
 Uri::getInstance();
