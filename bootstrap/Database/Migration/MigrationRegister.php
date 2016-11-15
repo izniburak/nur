@@ -14,6 +14,9 @@ use Phpmig\Adapter,
 global $config;
 require realpath(__DIR__ . '/../../../app/config.php');
 
+if($config['db']['driver'] == "sqlite")
+    $config['db']['database'] = realpath(__DIR__ . '/../../../storage/database/'. $config['db']['database']);
+
 $container = new Container();
 
 $container['config'] = $config['db'];
