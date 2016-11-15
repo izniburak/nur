@@ -179,6 +179,9 @@ class Route
     */
     public static function run()
     {
+        if(file_exists(ROOT . "/app.down"))
+            throw new ExceptionHandler("<h2>The system is under maintenance.</h2> We will be back very soon.");
+
         $uri = parse_url(http::server('REQUEST_URI'), PHP_URL_PATH);
         if((str_replace('/', '', $uri) != BASE_FOLDER) && (substr($uri, -1) == '/'))
             $uri = substr($uri, 0, (strlen($uri)-1));
