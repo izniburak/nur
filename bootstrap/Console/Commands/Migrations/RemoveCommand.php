@@ -7,7 +7,7 @@
 * @url      <https://github.com/izniburak/nur>
 * @license  The MIT License (MIT) - <http://opensource.org/licenses/MIT>
 */
- 
+
 namespace Nur\Console\Commands\Migrations;
 
 use Symfony\Component\Console\Input\InputInterface;
@@ -55,7 +55,7 @@ EOT
         if (!isset($migrations[$version])) {
             return;
         }
-        
+
         $mask = getcwd() . '/app/Migrations/' . $version . "_*.php";
         array_map("unlink", glob($mask));
         $output->writeLn("\n" . ' <info>+Success!</info> "' . ($version) . '" migration removed.');
@@ -64,14 +64,14 @@ EOT
         $container = $this->getContainer();
         $container['phpmig.migrator']->up($migrations[$version]);
 
-        $delete = $this->getContainer()['db']->table('mubu_migrations')->where('version', $version)->delete();
+        $delete = $this->getContainer()['db']->table('nur_migrations')->where('version', $version)->delete();
         if($delete)
         {
             $mask = getcwd() . '/app/Migrations/' . $version . "_*.php";
             array_map("unlink", glob($mask));
             $output->writeLn("\n" . ' <info>+Success!</info> "' . ($version) . '" migration removed.');
         }
-        else 
+        else
             $output->writeLn("\n" . ' <danger>+Error!</danger> "' . ($version) . '" migration not found.');
         */
     }

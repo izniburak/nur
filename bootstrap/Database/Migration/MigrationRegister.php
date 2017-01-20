@@ -16,7 +16,7 @@ use Symfony\Component\Yaml\Exception\ParseException;
 
 try {
     $config = Yaml::parse(file_get_contents('app/config.yml'));
-} 
+}
 catch (ParseException $e) {
     die(printf("Unable to parse the Config YAML string. Error Message: %s", $e->getMessage()));
 }
@@ -30,6 +30,10 @@ $container['config'] = $config['db'];
 
 $container['db'] = function ($c) {
     $capsule = new Capsule();
+    $capsule->getContainer()->singleton(
+        \Illuminate\Contracts\Debug\ExceptionHandler::class
+        /* \Your\ExceptionHandler\Implementation::class */
+    );
     $capsule->addConnection($c['config']);
     $capsule->setAsGlobal();
     $capsule->bootEloquent();
@@ -38,7 +42,7 @@ $container['db'] = function ($c) {
 };
 
 $container['phpmig.adapter'] = function($c) {
-    return new Adapter\Illuminate\Database($c['db'], 'mubu_migrations');
+    return new Adapter\Illuminate\Database($c['db'], 'nur_migrations');
 };
 
 $container['phpmig.migrations_path'] = realpath(__DIR__ . '/../../../app/Migrations');
