@@ -1,6 +1,6 @@
 {
     "name": "izniburak/nur",
-    "type": "library",
+    "type": "project",
     "description": "A simple framework for PHP",
     "keywords": ["php","framework","nur","simple","basic"],
     "homepage": "https://github.com/izniburak/nur",
