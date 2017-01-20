@@ -1,6 +1,6 @@
 # nur
 ```
-       _ __  _   _ _ __ 
+       _ __  _   _ _ __
       | '_ \| | | | '__|
       | | | | |_| | |   
       |_| |_|\__,_|_|   
@@ -25,23 +25,20 @@ nur - simple framework for PHP
 - ...
 
 ## install
-composer.json file:
-```json
-{
-    "require": {
-        "izniburak/nur": "dev-master"
-    }
-}
+via composer.json file:
 ```
-after run the install command.
-```
-$ composer install
+$ composer create-project --prefer-dist izniburak/nur:dev-master app
+$ cd app
+$ php nur
 ```
 
 or run the following command directly.
 
 ```
-$ composer require izniburak/nur:dev-master
+$ git clone https://github.com/izniburak/nur.git
+$ cd nur
+$ composer install
+$ php nur
 ```
 
 ## docs
@@ -49,10 +46,10 @@ documentation page: [nur docs][doc-url] (coming soon...)
 
 ## todo
 - Write test
-- Write documentation 
+- Write documentation
 - Twig Template Engine support.
-- Doctrine ORM support. 
-- Doctrine Migration support. 
+- Doctrine ORM support.
+- Doctrine Migration support.
 - ...
 
 ## support
