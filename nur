@@ -1,0 +1,22 @@
+#!usr/bin/env php
+<?php
+/**
+* nur - a simple framework for PHP Developers
+*
+* @author   izni burak demirtaş (@izniburak) <izniburak@gmail.com>
+* @web      <http://burakdemirtas.org>
+* @url      <https://github.com/izniburak/nur>
+* @license  The MIT License (MIT) - <http://opensource.org/licenses/MIT>
+*/
+
+require __DIR__.'/vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use Nur\Console\Command;
+
+$console = new Command( new Application("       _ __  _   _ _ __ 
+      | '_ \| | | | '__|
+      | | | | |_| | |   
+      |_| |_|\__,_|_|   
+  nur - Simple PHP Framework") );
+$console->run();

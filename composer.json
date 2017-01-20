@@ -1,0 +1,38 @@
+{
+    "name": "izniburak/nur",
+    "type": "library",
+    "description": "A simple framework for PHP",
+    "keywords": ["php","framework","nur","simple","basic"],
+    "homepage": "https://github.com/izniburak/nur",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "İzni Burak Demirtaş",
+            "email": "info@burakdemirtas.org",
+            "homepage": "http://burakdemirtas.org",
+            "role": "Creator"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "illuminate/database": "5.3.x",
+        "illuminate/view": "5.3.x",
+        "illuminate/events": "5.3.x",
+        "symfony/console": "^3.2",
+        "symfony/yaml": "^3.2",
+        "doctrine/dbal": "^2.5",
+        "pimple/pimple": "^3",
+        "davedevelopment/phpmig": "dev-master",
+        "izniburak/pdox": "dev-master",
+        "izniburak/router": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nur\\": "bootstrap/",
+            "App\\": "app/"
+        }
+    },
+    "support": {
+          "email": "info@burakdemirtas.org"
+    }
+}
