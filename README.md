@@ -14,7 +14,7 @@ nur - simple framework for PHP
 
 ### Features
 - Model - View - Controller
-- Easy command line application support. (width NUR)
+- Easy command line application support. (with NUR Cli App)
 - Routing system and Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
 - Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/5.3/eloquent))
