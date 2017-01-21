@@ -24,9 +24,9 @@ class Blade
     */
     public function __construct()
     {
-        $cache = realpath(__DIR__ . '/../..' . self::$templateFolder . '/blade');
+        $cache = __DIR__ . '/../..' . self::$templateFolder . '/blade';
 
-        if(!file_exists($cache))
+        if(!is_dir( realpath($cache) ))
             mkdir($cache, 0755);
         $views = realpath(__DIR__ . '/../../app/views');
 
