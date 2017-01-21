@@ -1,17 +1,17 @@
-mode: production    # application mode (values: production, development, test)
+mode: development   # application mode (values: production, development, test)
 admin: admin        # application admin folder name (optional)
 key: ''             # application licence key (optional)
 db:
     host: localhost             # database host name or ip address
     driver: sqlite              # database driver. (values: mysql, pgsql, sqlite, oracle)
-    database: test.sqlite3      # database name
+    database: ''                # database name
     username: root              # database username
     password: ''                # database user password
     charset: utf8               # database charset
     collation: utf8_general_ci  # database charset collation
     prefix: ''                  # database tables prefix
 autoload:
-    helper: [Global]
+    helper: []
     library: []
     model: []
-timezone: Europe/Istanbul # system date/time timezone 
+timezone: Europe/Istanbul       # system date/time timezone 
