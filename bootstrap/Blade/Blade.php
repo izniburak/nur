@@ -28,7 +28,7 @@ class Blade
 
         if(!is_dir( realpath($cache) ))
             mkdir($cache, 0755);
-        $views = realpath(__DIR__ . '/../../app/views');
+        $views = realpath(__DIR__ . '/../../app/Views');
 
         self::$class = new BladeTemplate($views, $cache);
     }

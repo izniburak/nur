@@ -28,7 +28,7 @@ class Error
         $page = is_null($page) ? 'index' : $page;
         $baseUrl = Uri::base();
 
-        $file = realpath(ROOT . '/app/views/errors/' . $page . '.php');
+        $file = realpath(ROOT . '/app/Views/errors/' . $page . '.php');
         if (file_exists($file))
         {
             require $file;
