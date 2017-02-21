@@ -15,20 +15,11 @@
     ],
     "require": {
         "php": ">=5.6.4",
-        "illuminate/database": "5.3.x",
-        "illuminate/view": "5.3.x",
-        "illuminate/events": "5.3.x",
-        "symfony/console": "^3.2",
-        "symfony/yaml": "^3.2",
-        "doctrine/dbal": "^2.5",
-        "pimple/pimple": "^3",
-        "davedevelopment/phpmig": "dev-master",
-        "izniburak/pdox": "dev-master",
-        "izniburak/router": "dev-master"
+        "izniburak/nur-core": "dev-master",
+        "davedevelopment/phpmig": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "Nur\\": "bootstrap/",
             "App\\": "app/"
         }
     },
