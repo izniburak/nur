@@ -27,7 +27,7 @@ nur - simple framework for PHP
 ## install
 create project via composer ("app" is application folder name):
 ```
-$ composer create-project --prefer-dist izniburak/nur:dev-master app
+$ composer create-project izniburak/nur app
 $ cd app
 $ php nur
 ```
