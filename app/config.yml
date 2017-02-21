@@ -1,4 +1,4 @@
-mode: development   # application mode (values: production, development, test)
+mode: production   # application mode (values: production, development, test)
 admin: admin        # application admin folder name (optional)
 key: ''             # application licence key (optional)
 db:
