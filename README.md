@@ -12,6 +12,8 @@ nur - simple framework for PHP
 [![Latest Unstable Version](https://poser.pugx.org/izniburak/nur/v/unstable.svg)](https://packagist.org/packages/izniburak/nur)
 [![License](https://poser.pugx.org/izniburak/nur/license.svg)](https://packagist.org/packages/izniburak/nur)
 
+> Nur Framwork can be a preference for your small (maybe medium) projects. If you say; "I'll make a bigger project.", I suggest you use a full-stack framework. :) e.g: Symfony, Laravel...
+
 ### Features
 - Model - View - Controller
 - Easy command line application support. (with NUR Cli App)
