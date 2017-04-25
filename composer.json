@@ -15,8 +15,7 @@
     ],
     "require": {
         "php": ">=5.6.4",
-        "izniburak/nur-core": "^2",
-        "davedevelopment/phpmig": "dev-master"
+        "izniburak/nur-core": "^1"
     },
     "autoload": {
         "psr-4": {
