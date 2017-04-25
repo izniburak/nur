@@ -1,6 +1,6 @@
-mode: production   # application mode (values: production, development, test)
-admin: admin        # application admin folder name (optional)
-key: ''             # application licence key (optional)
+mode: dev       # application mode (values: prod, dev, test)
+admin: admin    # application admin folder name (optional)
+key: ''         # application licence key (optional)
 db:
     host: localhost             # database host name or ip address
     driver: sqlite              # database driver. (values: mysql, pgsql, sqlite, oracle)

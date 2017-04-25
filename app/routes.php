@@ -12,7 +12,7 @@
 
 Route::get('/', function()
 {   
-	view('index');
+	return view('index');
 });
 
 Route::group('/foo', function()
