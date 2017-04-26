@@ -12,17 +12,17 @@ nur - simple framework for PHP
 [![Latest Unstable Version](https://poser.pugx.org/izniburak/nur/v/unstable.svg)](https://packagist.org/packages/izniburak/nur)
 [![License](https://poser.pugx.org/izniburak/nur/license.svg)](https://packagist.org/packages/izniburak/nur)
 
-> Nur Framwork can be a preference for your small (maybe medium) projects. If you say; "I'll make a bigger project.", I suggest you use a full-stack framework. :) e.g: Symfony, Laravel...
+> Nur Framework can be a preference for your small (maybe medium) projects. If you say; "I'll make a bigger project.", I suggest you use a full-stack framework. :) e.g: Symfony, Laravel...
 
 ### Features
 - Model - View - Controller
 - Easy command line application support. (with NUR Cli App)
 - Routing system and Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
-- Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/5.3/eloquent))
-- Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/5.3/queries))
-- Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/5.3/blade))
-- Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/5.3/migrations) - [PHPMig](https://github.com/davedevelopment/phpmig))
+- Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/5.4/eloquent))
+- Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/5.4/queries))
+- Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/5.4/blade))
+- Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/5.4/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
 - Libraries and Helpers support.
 - ...
 
