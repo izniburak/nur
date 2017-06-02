@@ -9,5 +9,5 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-    RewriteRule ^(app/|bootstrap/|storage/) - [F,L,NC]
+    RewriteRule ^(app/|vendor/|storage/) - [F,L,NC]
 </IfModule>
