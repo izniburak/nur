@@ -64,15 +64,6 @@ if (!function_exists('ch'))
     }
 }
 
-### dd function
-if (!function_exists('dd'))
-{
-    function dd($str)
-    {
-        die(var_dump($str));
-    }
-}
-
 ### stripslashes function
 if (!function_exists('s'))
 {

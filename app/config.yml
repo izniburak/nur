@@ -1,4 +1,5 @@
 mode: dev       # application mode (values: prod, dev, test)
+assets: assets  # application assets folder name (required)
 admin: admin    # application admin folder name (optional)
 key: ''         # application licence key (optional)
 db:
