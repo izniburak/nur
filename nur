@@ -13,10 +13,32 @@ require __DIR__.'/vendor/autoload.php';
 
 use Symfony\Component\Console\Application;
 use Nur\Console\Command;
+use Symfony\Component\Yaml\Yaml;
+use Symfony\Component\Yaml\Exception\ParseException;
 
-$console = new Command( new Application("       _ __  _   _ _ __ 
+define('ROOT', realpath(getcwd()));
+
+global $config;
+try {
+    $config = Yaml::parse(file_get_contents('app/config.yml'));
+}
+catch (ParseException $e) {
+    die(printf("Unable to parse the Config YAML string:\nError Message: %s", $e->getMessage()));
+}
+
+### get config values function
+if (!function_exists('getConfig'))
+{
+    function getConfig()
+    {
+        global $config;
+        return $config;
+    }
+}
+
+$console = new Command( new Application("       _ __  _   _ _ __
       | '_ \| | | | '__|
-      | | | | |_| | |   
-      |_| |_|\__,_|_|   
+      | | | | |_| | |
+      |_| |_|\__,_|_|
   nur - Simple PHP Framework") );
 $console->run();
