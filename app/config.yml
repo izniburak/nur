@@ -1,7 +1,10 @@
-mode: dev       # application mode (values: prod, dev, test)
-assets: assets  # application assets folder name (required)
-admin: admin    # application admin folder name (optional)
-key: ''         # application licence key (optional)
+# Application configuration file.
+
+mode: dev       # mode (values: prod, dev, test)
+assets: assets  # assets folder name (required)
+admin: admin    # admin folder name (optional)
+key: ''         # licence key (optional)
+
 db:
     host: localhost             # database host name or ip address
     driver: sqlite              # database driver. (values: mysql, pgsql, sqlite, oracle)
@@ -11,8 +14,12 @@ db:
     charset: utf8               # database charset
     collation: utf8_general_ci  # database charset collation
     prefix: ''                  # database tables prefix
+
 autoload:
     helper: []
     library: []
     model: []
-timezone: Europe/Istanbul       # system date/time timezone 
+    
+timezone: Europe/Istanbul   # date/time timezone 
+salt: ''                    # token salt value 
+https: false                # default URI Scheme

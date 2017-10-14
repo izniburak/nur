@@ -7,9 +7,9 @@
 ```
 nur - simple framework for PHP
 
-[![Total Downloads](https://poser.pugx.org/izniburak/nur/d/total.svg)](https://packagist.org/packages/izniburak/nur)
-[![Latest Stable Version](https://poser.pugx.org/izniburak/nur/v/stable.svg)](https://packagist.org/packages/izniburak/nur)
-[![Latest Unstable Version](https://poser.pugx.org/izniburak/nur/v/unstable.svg)](https://packagist.org/packages/izniburak/nur)
+[![Total Downloads](https://poser.pugx.org/izniburak/nur-core/d/total.svg)](https://packagist.org/packages/izniburak/nur)
+[![Latest Stable Version](https://poser.pugx.org/izniburak/nur-core/v/stable.svg)](https://packagist.org/packages/izniburak/nur)
+[![Latest Unstable Version](https://poser.pugx.org/izniburak/nur-core/v/unstable.svg)](https://packagist.org/packages/izniburak/nur)
 [![License](https://poser.pugx.org/izniburak/nur/license.svg)](https://packagist.org/packages/izniburak/nur)
 
 > Nur Framework can be a preference for your small (maybe medium) projects. If you say; "I'll make a bigger project.", I suggest you use a full-stack framework. :) e.g: Symfony, Laravel...
@@ -17,13 +17,14 @@ nur - simple framework for PHP
 ### Features
 - Model - View - Controller
 - Easy command line application support. (with NUR Cli App)
-- Routing system and Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
+- Routing system and basic Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
+- Symfony Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
 - Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/5.4/eloquent))
 - Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/5.4/queries))
 - Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/5.4/blade))
 - Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/5.4/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
-- Libraries and Helpers support.
+- Components, Libraries and Helpers support.
 - ...
 
 ## install

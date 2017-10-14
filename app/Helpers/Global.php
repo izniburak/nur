@@ -64,45 +64,6 @@ if (!function_exists('ch'))
     }
 }
 
-### stripslashes function
-if (!function_exists('s'))
-{
-    function s($str)
-    {
-        if(is_array($str))
-            return array_filter($str, 's');
-
-        $str = htmlspecialchars_decode($str, ENT_QUOTES);
-        $str = html_entity_decode($str, ENT_QUOTES, 'UTF-8');
-        return trim(stripslashes($str));
-    }
-}
-
-### strip_tags function
-if (!function_exists('st'))
-{
-    function st($str, $accept = null)
-    {
-        if(is_array($str))
-            return array_filter($str, 'st');
-
-        if(is_null($accept))
-            return trim(strip_tags($str));
-        else
-            return trim(strip_tags($str, $accept));
-    }
-}
-
-### substr function
-if (!function_exists('ss'))
-{
-    function ss($str, $x, $y = '')
-    {
-        if(strlen($str) > $x) $str = mb_substr($str, 0, $x, 'UTF-8') . $y;
-        return $str;
-    }
-}
-
 ### echo function
 if (!function_exists('e'))
 {

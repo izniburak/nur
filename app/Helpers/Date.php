@@ -8,23 +8,30 @@
 * @license  The MIT License (MIT) - <http://opensource.org/licenses/MIT>
 */
 
-if (!function_exists('trDate'))
+if (!function_exists('dateTr'))
 {
-    function trDate($time)
+    function dateTr($time, $day = false)
     {
-        $d 		= date("j M Y", $time);
-        $ing	= ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-        $tr		= ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"];
-        return str_replace($ing, $tr, $d);
+        $format = "d M Y" . ($day ? ", l" : "");
+        $date = date($format, $time);
+        $eng = [
+            "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec", 
+            "Monday", "Tuesday", "Wednesday", "Thurday", "Friday", "Saturday", "Sunday"
+        ];
+        $tr	= [
+            "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık", 
+            "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"
+        ];
+        return str_replace($eng, $tr, $date);
     }
 }
 
 if (!function_exists('hours'))
 {
-    function hours($time, $s = false)
+    function hours($time = false, $s = false)
     {
-        $x	= date("H:i", $time);
-        if($s) $x = date("H:i:s", $time);
-        return $x;	
+        $format = "H:i" . ($s ? ":i" : "");
+        $hour	= date($format, ($time == false ? time() : $time));
+        return $hour;	
     }
 }
