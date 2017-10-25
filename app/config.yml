@@ -7,13 +7,24 @@ key: ''         # licence key (optional)
 
 db:
     host: localhost             # database host name or ip address
-    driver: sqlite              # database driver. (values: mysql, pgsql, sqlite, oracle)
+    driver: mysql               # database driver. (values: mysql, pgsql, sqlite, oracle)
     database: ''                # database name
     username: root              # database username
     password: ''                # database user password
     charset: utf8               # database charset
     collation: utf8_general_ci  # database charset collation
     prefix: ''                  # database tables prefix
+
+smtp:
+    host: smtp.localhost        # smtp host name or ip address
+    port: 587                   # smtp port
+    username: root              # smtp username
+    password: ''                # smtp user password
+    encryption: tls             # smtp encryption
+    charset: utf-8              # charset
+    from:
+        address: hello@localhost    # default sender e-mail
+        name: Example               # default sender name
 
 autoload:
     helper: []

@@ -29,7 +29,7 @@ class Sample
     /**
     * Instance of class.
     *
-    * @return string | null
+    * @return object | null
     */
     public static function getInstance()
     {
