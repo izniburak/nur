@@ -1,6 +1,6 @@
 # Application configuration file.
 
-mode: dev       # mode (values: prod, dev, test)
+mode: prod      # mode (values: prod, dev, test)
 assets: assets  # assets folder name (required)
 admin: admin    # admin folder name (optional)
 key: ''         # licence key (optional)
