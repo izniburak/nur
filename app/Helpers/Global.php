@@ -9,23 +9,18 @@
 */
 
 ### remove function
-if (!function_exists('remove'))
-{
+if (!function_exists('remove')) {
     function remove($file)
     {
-        if (file_exists($file))
-        {
-            @unlink($file);
-            return true;
+        if (file_exists($file)) {
+            return unlink($file);
         }
-
         return false;
     }
 }
 
 ### seo (search engine optimization) urls function
-if (!function_exists('seo'))
-{
+if (!function_exists('seo')) {
     function seo($sef)
     {
         $x = ['İ', 'Ö', 'Ü', 'Ğ', 'Ç', 'Ş', 'ö', 'ü', 'ğ', 'ç', 'ş', 'ı', '_', ' ', '--', '---'];
@@ -38,8 +33,7 @@ if (!function_exists('seo'))
 }
 
 ### curl function
-if (!function_exists('ch'))
-{
+if (!function_exists('ch')) {
     function ch($feed, $ref = null, $coo = null)
     {
         $ch = curl_init();
@@ -47,15 +41,15 @@ if (!function_exists('ch'))
         curl_setopt ($ch, CURLOPT_URL, $feed);
         curl_setopt ($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
-        if(!is_null($coo))
-        {
+        if(!is_null($coo)) {
             curl_setopt($ch, CURLOPT_COOKIEFILE, $coo);
             curl_setopt($ch, CURLOPT_COOKIEJAR, $coo);
         }
-        if(is_null($ref))
+        if(is_null($ref)) {
             curl_setopt($ch, CURLOPT_REFERER, $feed);
-        else
+        } else {
             curl_setopt($ch, CURLOPT_REFERER,$ref);
+        }
         curl_setopt ($ch, CURLOPT_CONNECTTIMEOUT, $timeout);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         $data = curl_exec($ch);
@@ -65,13 +59,13 @@ if (!function_exists('ch'))
 }
 
 ### echo function
-if (!function_exists('e'))
-{
+if (!function_exists('e')) {
     function e($str, $p = false)
     {
-        if($p == false)
+        if($p == false) {
             echo $str;
-        else
+        } else {
             print_r($str);
+        }
     }
 }

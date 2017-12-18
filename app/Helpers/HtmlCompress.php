@@ -8,23 +8,14 @@
 * @license  The MIT License (MIT) - <http://opensource.org/licenses/MIT>
 */
 
- if (!function_exists('htmlCompress'))
- {
-     function htmlCompress($html)
-     {
-         return str_replace(["\n", "\t", "\r", "   "], '', $html);
-     }
- }
-
-if (!function_exists('compressHtml'))
-{
-    function compressHtml($buffer)
+if (!function_exists('htmlCompress')) {
+    function htmlCompress($buffer)
     {
-        $search = array('/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s');
-        $replace = array('>', '<', '\\1');
+        $search = ['/\>[^\S ]+/s', '/[^\S ]+\</s', '/(\s)+/s'];
+        $replace = ['>', '<', '\\1'];
         if (preg_match("/\<html/i",$buffer) == 1 && preg_match("/\<\/html\>/i",$buffer) == 1) 
             $buffer = preg_replace($search, $replace, $buffer);
-        $buffer = str_replace(array("\n", "\t", "\r", "   ", "    "), '', $buffer);
+        $buffer = str_replace(["\n", "\t", "\r", "   ", "    "], '', $buffer);
 
         return $buffer;
     }

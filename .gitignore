@@ -2,6 +2,9 @@
 /.DS_Store
 /.docs 
 /.todo 
+/.vscode
+/node_modules
 /composer.lock
+/package-lock.json
 /vendor/
 /storage/blade/

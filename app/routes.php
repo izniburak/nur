@@ -12,17 +12,14 @@
 
 Route::get('/', function()
 {   
-	return view('index');
+    return view('index');
 });
-
 Route::group('/foo', function()
 {
     Route::get('/bar', 'Index@main');
     Route::get('/baz', 'Index@main');
 });
-
 Route::get('/test/controller', 'Index@main');
-
 Route::get('/hello/{s}', function( $name )
 {
     echo "Hello, " . $name;

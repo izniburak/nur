@@ -1,7 +1,3 @@
-<?php 
-$title = ($title == '' ? 'Oppss! Page Not Found.' : $title);
-$message = ($message == '' ? 'The page you are trying to access is currently unavailable.' : $message);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +16,7 @@ $message = ($message == '' ? 'The page you are trying to access is currently una
             <h1><?=$title?></h1>
             <?=($message)?>
             <br /><br />
-            go to <a href="javascript:window.history.back()">back</a> or <a href="<?=$baseUrl?>">home</a>.
+            go to <a href="javascript:window.history.back()">back</a> or <a href="<?=Uri::base()?>">home</a>.
         </div>
     </div>
 </body>
