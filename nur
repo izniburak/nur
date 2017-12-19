@@ -14,8 +14,6 @@ require __DIR__.'/vendor/autoload.php';
 use Nur\Kernel\Kernel;
 use Nur\Console\Command;
 use Symfony\Component\Console\Application;
-use Symfony\Component\Yaml\Yaml;
-use Symfony\Component\Yaml\Exception\ParseException;
 
 $app = new Kernel();
 $config = $app->config();
