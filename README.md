@@ -20,12 +20,18 @@ nur - simple framework for PHP
 - Routing system and basic Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
 - Symfony Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
-- Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/5.4/eloquent))
-- Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/5.4/queries))
-- Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/5.4/blade))
-- Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/5.4/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
+- Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/5.5/eloquent))
+- Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/5.5/queries))
+- Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/5.5/blade))
+- Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/5.5/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
 - Components, Libraries and Helpers support.
 - ...
+
+## server requirements
+- PHP >= 7.1
+- PDO PHP Extension
+- Mbstring PHP Extension
+- XML PHP Extension
 
 ## install
 create project via composer ("app" is application folder name):
