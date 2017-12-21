@@ -23,9 +23,9 @@ define('ROOT', $app->root());
 define('DOC_ROOT', $app->docRoot());
 define('BASE_FOLDER', $app->baseFolder());
 
-$console = new Command( new Application("       _ __  _   _ _ __
-      | '_ \| | | | '__|
-      | | | | |_| | |
-      |_| |_|\__,_|_|
+$console = new Command( new Application("      _ __  _   _ _ __
+     | '_ \| | | | '__|
+     | | | | |_| | |
+     |_| |_|\__,_|_| v" . NUR_VERSION . "
   nur - Simple PHP Framework") );
 $console->run();
