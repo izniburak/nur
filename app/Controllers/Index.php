@@ -10,14 +10,4 @@ class Index extends Controller
     {
         return blade('hello');
     }
-
-    function test()
-    {
-        return false;
-    }
-
-    function foo($bar, $ber = 1, $bor = 1)
-    {
-        return $bar;
-    }
 }

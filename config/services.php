@@ -24,8 +24,6 @@ return [
     Nur\Providers\Database::class,
     Nur\Providers\Html::class,
     Nur\Providers\Cache::class,
-    Nur\Providers\Mail::class,
-    Nur\Providers\Upload::class,
     Nur\Providers\Validation::class,
 
     /*
@@ -48,20 +46,18 @@ return [
   'aliases' => [
 
     'Request'     => Nur\Facades\Request::class,
-    'Response'    => Nur\Facades\Request::class,
+    'Response'    => Nur\Facades\Response::class,
     'Uri'         => Nur\Facades\Uri::class,
     'Http'        => Nur\Facades\Http::class,
     'Cookie'      => Nur\Facades\Cookie::class,
     'Session'     => Nur\Facades\Session::class,
     'Cache'       => Nur\Facades\Cache::class,
     'Log'         => Nur\Facades\Log::class,
-    'Mail'        => Nur\Facades\Mail::class,
     'Sql'         => Nur\Facades\Sql::class,
     'DB'          => Nur\Facades\Db::class,
     'Html'        => Nur\Facades\Html::class,
     'Form'        => Nur\Facades\Form::class,
     'Validation'  => Nur\Facades\Validation::class,
-    'Upload'      => Nur\Facades\Upload::class,
 
   ],
 

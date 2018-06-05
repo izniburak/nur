@@ -15,8 +15,8 @@
 Route::pattern('demo', '[0-9]+');
 
 # Example basic middleware for csrf protection.
-Route::middleware('csrf', function()
-{
-    if( !csrfCheck( Http::post('_token') ) )
-        return Uri::redirect('/no-access');
+Route::middleware('csrf', function() {
+    if( !csrfCheck(http()->post('_token')) ) {
+        return uri()->redirect('/no-access');
+    }
 });
