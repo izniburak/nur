@@ -16,7 +16,6 @@ use Nur\Console\Command;
 use Symfony\Component\Console\Application;
 
 $app = new Kernel();
-$config = $app->config();
 
 define('NUR_VERSION', Kernel::VERSION);
 define('ROOT', $app->root());
