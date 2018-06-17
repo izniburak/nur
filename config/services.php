@@ -22,9 +22,10 @@ return [
     Nur\Providers\Request::class,
     Nur\Providers\Response::class,
     Nur\Providers\Database::class,
-    Nur\Providers\Html::class,
-    Nur\Providers\Cache::class,
-    Nur\Providers\Validation::class,
+    // Nur\Providers\Hash::class,
+    // Nur\Providers\Html::class,
+    // Nur\Providers\Cache::class,
+    // Nur\Providers\Validation::class,
 
     /*
     * Application Service Providers...
@@ -51,13 +52,8 @@ return [
     'Http'        => Nur\Facades\Http::class,
     'Cookie'      => Nur\Facades\Cookie::class,
     'Session'     => Nur\Facades\Session::class,
-    'Cache'       => Nur\Facades\Cache::class,
-    'Log'         => Nur\Facades\Log::class,
     'Sql'         => Nur\Facades\Sql::class,
     'DB'          => Nur\Facades\Db::class,
-    'Html'        => Nur\Facades\Html::class,
-    'Form'        => Nur\Facades\Form::class,
-    'Validation'  => Nur\Facades\Validation::class,
 
   ],
 
