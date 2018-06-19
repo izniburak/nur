@@ -1,15 +1,18 @@
 <?php 
 
 return [
-  'driver' => 'smtp',
-  'host' => 'smtp.localhost',
-  'port' => 587,
-  'username' => 'root',
-  'password' => '',
-  'encryption' => 'tls',
-  'charset' => 'utf8',
+
+  'driver'      => env('MAIL_DRIVER', 'smtp'),
+  'host'        => env('MAIL_HOST', 'smtp.localhost'),
+  'port'        => env('MAIL_PORT', 587),
+  'username'    => env('MAIL_USERNAME', ''),
+  'password'    => env('MAIL_PASSWORD', ''),
+  'encryption'  => env('MAIL_ENCRYPTION', ''),
+  'charset'     => env('MAIL_CHARSET', 'utf8'),
+
   'from' => [
-    'address' => 'hello@localhost',
-    'name' => 'Example',
+    'address' => env('MAIL_ADDRESS', 'hello@localhost'),
+    'name'    => env('MAIL_NAME', 'Example'),
   ],
+
 ];
