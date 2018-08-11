@@ -4,7 +4,6 @@
     <meta charset="utf-8"/>
     <title>nur - simple PHP framework</title>
     <style>
-    <!--
         body { margin:0; font-family:sans-serif; text-align:center; color:#333; }
         a { text-decoration:underline; color:#000; }
         a:hover { text-decoration:none; }
@@ -17,7 +16,6 @@
         h5 > a:hover { text-decoration:underline; }
         .welcome { width:650px; margin-top:14%; margin-left:auto; margin-right:auto; }
         .blank { display:inline-block; padding:0 5px; }
-    -->
     </style>
 </head>
 <body>
