@@ -11,7 +11,7 @@
 # Application Routes file.
 
 Route::get('/', function()
-{   
+{
     return view('index');
 });
 

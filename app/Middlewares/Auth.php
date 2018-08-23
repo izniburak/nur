@@ -6,10 +6,11 @@ use Nur\Middleware\Middleware;
 
 class Auth extends Middleware
 {
-    function isLogin()
+    function handle()
     {
-        if(session('uid') == false)
-            return uri()->redirect('user/login');
+        if (! session()->hasKey('uid')) {
+            return uri()->redirect('login');
+        }
 
         return;
     }
