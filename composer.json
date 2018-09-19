@@ -1,28 +1,34 @@
 {
-    "name": "izniburak/nur",
-    "type": "project",
-    "description": "A simple framework for PHP",
-    "keywords": ["php","framework","nur","simple","basic"],
-    "homepage": "https://github.com/izniburak/nur",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "İzni Burak Demirtaş",
-            "email": "info@burakdemirtas.org",
-            "homepage": "http://burakdemirtas.org",
-            "role": "Creator"
-        }
-    ],
-    "require": {
-        "php": "^7.1.3",
-        "izniburak/nur-core": "^1"
-    },
-    "autoload": {
-        "psr-4": {
-            "App\\": "app/"
-        }
-    },
-    "support": {
-          "email": "info@burakdemirtas.org"
+  "name": "izniburak/nur",
+  "type": "project",
+  "description": "A simple framework for PHP",
+  "keywords": [
+    "php",
+    "framework",
+    "nur",
+    "simple",
+    "basic"
+  ],
+  "homepage": "https://github.com/izniburak/nur",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "İzni Burak Demirtaş",
+      "email": "info@burakdemirtas.org",
+      "homepage": "http://burakdemirtas.org",
+      "role": "Creator"
     }
+  ],
+  "require": {
+    "php": "^7.1.3",
+    "izniburak/nur-core": "^1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  },
+  "support": {
+    "email": "info@burakdemirtas.org"
+  }
 }
