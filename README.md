@@ -20,12 +20,12 @@ nur - simple framework for PHP
 - Routing system and basic Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
 - Symfony Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
-- Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/[laravel-version]/eloquent))
-- Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/[laravel-version]/queries))
-- Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/[laravel-version]/blade))
-- Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/[laravel-version]/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
-- Collections support. ([Laravel Collections](https://laravel.com/docs/[laravel-version]/collections))
-- Useful array and string helpers. ([Laravel Helpers](https://laravel.com/docs/[laravel-version]/helpers))
+- Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/5.7/eloquent))
+- Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/5.7/queries))
+- Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/5.7/blade))
+- Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/5.7/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
+- Collections support. ([Laravel Collections](https://laravel.com/docs/5.7/collections))
+- Useful array and string helpers. ([Laravel Helpers](https://laravel.com/docs/5.7/helpers))
 - ...
 
 ## nur core
