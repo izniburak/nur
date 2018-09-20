@@ -16,20 +16,21 @@ nur - simple framework for PHP
 
 ### Features
 - Model - View - Controller
-- Easy command line application support. (with NUR Cli App)
+- Easy command line application support. _(NUR Cli App)_
 - Routing system and basic Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
 - Symfony Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
-- Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/5.7/eloquent))
-- Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/5.7/queries))
-- Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/5.7/blade))
-- Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/5.7/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
-- Collections support. ([Laravel Collections](https://laravel.com/docs/5.7/collections))
-- Useful array and string helpers. ([Laravel Helpers](https://laravel.com/docs/5.7/helpers))
-- ...
+- Some **Laravel 5.7** Packages supports.
+    - Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/eloquent))
+    - Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/queries))
+    - Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/blade))
+    - Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
+    - Collections support. ([Laravel Collections](https://laravel.com/docs/collections))
+    - Useful array and string helpers. ([Laravel Helpers](https://laravel.com/docs/helpers))
+- Events/Listeners, Basic logger, Request validation, Html/Form builder, Simple cache, Hashing etc...
 
 ## nur core
-If you want to examine Nur's core, you can follow this link: 
+If you want to examine Nur's core files, you can follow this link: 
 
 [izniburak/nur-core](https://github.com/izniburak/nur-core) 
 
@@ -48,6 +49,7 @@ create project via composer ("app" is application folder name):
 ```
 $ composer create-project izniburak/nur app
 $ cd app
+$ cp .env.example .env
 $ php nur
 ```
 
@@ -57,6 +59,7 @@ or run the following command directly.
 $ git clone https://github.com/izniburak/nur.git
 $ cd nur
 $ composer install
+$ cp .env.example .env
 $ php nur
 ```
 
@@ -66,9 +69,6 @@ documentation page: [nur docs][doc-url] (coming soon...)
 ## todo
 - Write test
 - Write documentation
-- Twig Template Engine support.
-- Doctrine ORM support.
-- Doctrine Migration support.
 - ...
 
 ## support
@@ -77,7 +77,7 @@ documentation page: [nur docs][doc-url] (coming soon...)
 [izniburak's twitter][twitter-url]
 
 ## contributing
-1. fork it ( https://github.com/izniburak/nur/fork )
+1. fork it [Nur Framework](https://github.com/izniburak/nur/fork) or [Nur Framework Core](https://github.com/izniburak/nur-core/fork) (for core changes)
 2. create your feature branch (git checkout -b my-new-feature)
 3. commit your changes (git commit -am 'Add some feature')
 4. push to the branch (git push origin my-new-feature)
@@ -91,4 +91,3 @@ documentation page: [nur docs][doc-url] (coming soon...)
 [doc-url]: javascript:;
 [author-url]: http://burakdemirtas.org
 [twitter-url]: https://twitter.com/izniburak
-[laravel-version]: 5.6
