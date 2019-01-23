@@ -7,7 +7,7 @@
 /.vagrant
 /node_modules
 /vendor
-/storage/cache/blade
+/storage/cache/blade/*.php
 /storage/cache/html/*.cache
 /storage/cache/sql/*.cache
 /storage/log/*.log
