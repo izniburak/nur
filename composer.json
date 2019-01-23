@@ -28,6 +28,14 @@
       "App\\": "app/"
     }
   },
+  "scripts": {
+    "post-root-package-install": [
+      "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+    ],
+    "post-create-project-cmd": [
+      "@php nur app:keygen --ansi"
+    ]
+  },
   "support": {
     "email": "info@burakdemirtas.org"
   }

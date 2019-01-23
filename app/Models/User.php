@@ -4,9 +4,10 @@ namespace App\Models;
 
 use Nur\Database\Model;
 
-class Users extends Model
+class User extends Model
 {
 	protected $table = 'users';
+    public $timestamps = true;
 
 	/**
 	 * The attributes that are mass assignable.
@@ -23,6 +24,6 @@ class Users extends Model
 	 * @var array
 	 */
 	protected $hidden = [
-			'password', 'remember_token',
+        'password', 'remember_token',
 	];
 }

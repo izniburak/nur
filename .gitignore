@@ -1,7 +1,7 @@
 /.git
 /.DS_Store
-/.docs 
-/.todo 
+/.docs
+/.todo
 /.vscode
 /.idea
 /.vagrant
@@ -11,7 +11,8 @@
 /storage/cache/html/*.cache
 /storage/cache/sql/*.cache
 /storage/log/*.log
-/storage/database
+/database/*.sqlite
+/database/*.sqlite3
 npm-debug.log
 yarn-error.log
 .env

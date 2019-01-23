@@ -11,5 +11,7 @@ class Csrf extends Middleware
         if (! csrf_check(http()->post('_token')) ) {
             return uri()->redirect('/');
         }
+
+        return true;
     }
 }

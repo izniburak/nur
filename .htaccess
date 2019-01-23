@@ -23,6 +23,6 @@
     # Handle Front Controller...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteRule ^(app/|vendor/|storage/|config/) - [F,L,NC]
     RewriteRule ^ index.php [L]
+    RewriteRule ^(app/|vendor/|storage/|config/|database/) - [F,L,NC]
 </IfModule>

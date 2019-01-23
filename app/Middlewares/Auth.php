@@ -8,10 +8,10 @@ class Auth extends Middleware
 {
     function handle()
     {
-        if (! session()->hasKey('uid')) {
+        if (! session()->has('uid')) {
             return uri()->redirect('login');
         }
 
-        return;
+        return true;
     }
 }

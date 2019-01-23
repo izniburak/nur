@@ -49,7 +49,6 @@ create project via composer ("app" is application folder name):
 ```
 $ composer create-project izniburak/nur app
 $ cd app
-$ cp .env.example .env
 $ php nur
 ```
 
@@ -59,7 +58,6 @@ or run the following command directly.
 $ git clone https://github.com/izniburak/nur.git
 $ cd nur
 $ composer install
-$ cp .env.example .env
 $ php nur
 ```
 

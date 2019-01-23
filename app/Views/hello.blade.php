@@ -27,7 +27,7 @@
             <a href="https://github.com/izniburak/nur">view on github</a> <span class="blank">|</span>
             <a href="https://github.com/izniburak/nur#docs">documentation</a>
         </h4>
-        <h5>creator, maintainer<br/> <a href="https://github.com/izniburak/" title="izni burak demirtas">izniburak</a></h5>
+        <h5>creator, maintainer<br/> <a href="https://github.com/izniburak/" title="izni burak demirtaş">izniburak</a></h5>
     </div>
 </body>
 </html>
