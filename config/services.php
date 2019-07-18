@@ -20,16 +20,15 @@ return [
         */
         Nur\Providers\Blade::class,
         Nur\Providers\Database::class,
-        Nur\Providers\Http::class,
         Nur\Providers\Session::class,
         Nur\Providers\Cookie::class,
-        // Nur\Providers\Log::class,
+        Nur\Providers\Listener::class,
+        Nur\Providers\Log::class,
+        Nur\Providers\Hash::class,
+        Nur\Providers\Validation::class,
         // Nur\Providers\Pdox::class,
-        // Nur\Providers\Event::class,
-        // Nur\Providers\Hash::class,
         // Nur\Providers\Html::class,
         // Nur\Providers\Cache::class,
-        // Nur\Providers\Validation::class,
 
         /*
         * Application Service Providers...
@@ -53,7 +52,6 @@ return [
         'Request'     => Nur\Facades\Request::class,
         'Response'    => Nur\Facades\Response::class,
         'Uri'         => Nur\Facades\Uri::class,
-        'Http'        => Nur\Facades\Http::class,
         'Cookie'      => Nur\Facades\Cookie::class,
         'Session'     => Nur\Facades\Session::class,
         'Sql'         => Nur\Facades\Sql::class,
@@ -76,7 +74,7 @@ return [
 
     'listeners' => [
 
-        // 'SendMail'   => App\Listeners\SendMail::class,
+        // 'sendmail'   => [ App\Listeners\SendMail::class ],
 
     ],
 

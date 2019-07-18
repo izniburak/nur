@@ -15,4 +15,5 @@ Route::get('/', function()
     return view('index');
 });
 
-Route::get('/test/controller', 'Index@main');
+Route::controller('/test/controller', 'IndexController');
+
