@@ -6,10 +6,16 @@ use Nur\Middleware\Middleware;
 
 class Csrf extends Middleware
 {
+    /**
+     * This method will be triggered
+     * when the middleware is called
+     *
+     * @return mixed
+     */
     function handle()
     {
-        if (! csrf_check(http()->post('_token')) ) {
-            return uri()->redirect('/');
+        if (! csrf_check(request()->input('_token')) ) {
+            return redirect('/');
         }
 
         return true;

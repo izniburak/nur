@@ -6,10 +6,16 @@ use Nur\Middleware\Middleware;
 
 class Auth extends Middleware
 {
+    /**
+     * This method will be triggered
+     * when the middleware is called
+     *
+     * @return mixed
+     */
     function handle()
     {
-        if (! session()->has('uid')) {
-            return uri()->redirect('login');
+        if (! auth()->check()) {
+            return redirect('login');
         }
 
         return true;

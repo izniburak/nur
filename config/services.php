@@ -18,6 +18,7 @@ return [
         /*
         * Nur Framework Service Providers...
         */
+        Nur\Providers\Auth::class,
         Nur\Providers\Blade::class,
         Nur\Providers\Database::class,
         Nur\Providers\Session::class,
@@ -49,6 +50,7 @@ return [
 
     'aliases' => [
 
+        'Auth'        => Nur\Facades\Auth::class,
         'Request'     => Nur\Facades\Request::class,
         'Response'    => Nur\Facades\Response::class,
         'Uri'         => Nur\Facades\Uri::class,
