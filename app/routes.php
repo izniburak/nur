@@ -9,6 +9,7 @@
 */
 
 # Application Routes file.
+use Nur\Facades\Route;
 
 Route::get('/', function()
 {
