@@ -21,7 +21,7 @@
   ],
   "require": {
     "php": "^7.1.3",
-    "izniburak/nur-core": "^1"
+    "izniburak/nur-core": "^1.58"
   },
   "autoload": {
     "psr-4": {
