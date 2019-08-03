@@ -20,7 +20,7 @@ nur - simple framework for PHP
 - Routing system and basic Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
 - Symfony Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
-- Authentication component.
+- Authentication component. (with **JWT** and **Basic Auth**)
 - Some **Laravel 5.8** Packages supports.
     - Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/eloquent))
     - Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/queries))

@@ -27,6 +27,7 @@ return [
         Nur\Providers\Log::class,
         Nur\Providers\Hash::class,
         Nur\Providers\Validation::class,
+        // Nur\Providers\Jwt::class,
         // Nur\Providers\Pdox::class,
         // Nur\Providers\Html::class,
         // Nur\Providers\Cache::class,
@@ -62,6 +63,7 @@ return [
         'Crypt'       => Nur\Facades\Crypt::class,
         'Log'         => Nur\Facades\Log::class,
         'Validation'  => Nur\Facades\Validation::class,
+        'Jwt'         => Nur\Facades\Jwt::class,
 
     ],
 
