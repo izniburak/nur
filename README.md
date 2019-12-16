@@ -21,7 +21,7 @@ nur - simple framework for PHP
 - Symfony Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
 - Authentication component. (with **JWT** and **Basic Auth**)
-- Some **Laravel 5.8** Packages supports.
+- Some **Laravel 6.x** Packages supports.
     - Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/eloquent))
     - Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/queries))
     - Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/blade))
@@ -36,7 +36,7 @@ If you want to examine Nur's core files, you can follow this link:
 [izniburak/nur-core](https://github.com/izniburak/nur-core) 
 
 ## server requirements
-- PHP >= 7.1.3
+- PHP >= 7.2
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - Mbstring PHP Extension
