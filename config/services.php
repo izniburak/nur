@@ -27,6 +27,7 @@ return [
         Nur\Providers\Log::class,
         Nur\Providers\Hash::class,
         Nur\Providers\Validation::class,
+        // Nur\Providers\Translation::class,
         // Nur\Providers\Jwt::class,
         // Nur\Providers\Pdox::class,
         // Nur\Providers\Html::class,
@@ -60,10 +61,8 @@ return [
         'Sql'         => Nur\Facades\Sql::class,
         'DB'          => Nur\Facades\Db::class,
         'Hash'        => Nur\Facades\Hash::class,
-        'Crypt'       => Nur\Facades\Crypt::class,
         'Log'         => Nur\Facades\Log::class,
         'Validation'  => Nur\Facades\Validation::class,
-        'Jwt'         => Nur\Facades\Jwt::class,
 
     ],
 
