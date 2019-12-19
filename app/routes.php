@@ -10,11 +10,13 @@
 
 # Application Routes file.
 use Nur\Facades\Route;
+use Nur\Http\{Request, Response};
 
-Route::get('/', function()
+Route::get('/', function(Request $request): Response
 {
     return view('index');
 });
 
-Route::controller('/test/controller', 'IndexController');
+Route::get('/controller', 'IndexController@main');
 
+Route::controller('/test', 'TestController');
