@@ -13,7 +13,7 @@ class Csrf extends Middleware
      *
      * @return mixed
      */
-    function handle()
+    public function handle()
     {
         if (! in_array(request()->method(), ['HEAD', 'GET', 'OPTIONS'])) {
             $token = request()->input('_token') ?: request()->header('X-CSRF-TOKEN');

@@ -12,7 +12,7 @@ class Auth extends Middleware
      *
      * @return mixed
      */
-    function handle()
+    public function handle()
     {
         if (! auth()->check()) {
             return redirect('login');

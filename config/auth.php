@@ -32,6 +32,10 @@ return [
     */
 
     'jwt' => [
+
+        // Use JWT?
+        'enabled' => false,
+
         // JWT Authentication Secret
         'secret' => env('JWT_SECRET'),
 
@@ -43,6 +47,7 @@ return [
 
         // Leeway
         'leeway' => env('JWT_LEEWAY', 0),
+
     ],
 
 
@@ -60,11 +65,13 @@ return [
     */
 
     'basic' => [
+
         'credentials' => ['email', 'password'],
         'driver'      => 'database',
 
         // 'credentials' => [env('BASIC_AUTH_USER'), env('BASIC_AUTH_PASS')],
         // 'driver'      => 'default',
+
     ],
 
 ];
