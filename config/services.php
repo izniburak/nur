@@ -53,9 +53,6 @@ return [
 
         'Auth'        => Nur\Facades\Auth::class,
         'Jwt'         => Nur\Facades\Jwt::class,
-        'Request'     => Nur\Facades\Request::class,
-        'Response'    => Nur\Facades\Response::class,
-        'Uri'         => Nur\Facades\Uri::class,
         'Cookie'      => Nur\Facades\Cookie::class,
         'Session'     => Nur\Facades\Session::class,
         'Config'      => Nur\Facades\Config::class,
