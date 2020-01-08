@@ -8,11 +8,11 @@ return [
     |--------------------------------------------------------------------------
     |
     | This value determines the "environment" your application is currently
-    | running in. (dev | test | prod)
+    | running in. (local | test | production)
     |
     */
 
-    'env' => env('APP_ENV', 'prod'),
+    'env' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------

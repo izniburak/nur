@@ -1,0 +1,42 @@
+<?php
+
+return [
+
+    /**
+     * The application's global HTTP middleware stack.
+     *
+     * These middleware are run during every request to your application.
+     *
+     */
+    'middleware' => [
+
+    ],
+
+
+    /**
+     * The application's route middleware groups.
+     */
+    'middlewareGroups' => [
+
+        'web' => [
+
+        ],
+
+        'api' => [
+
+        ],
+
+    ],
+
+    /**
+     * The application's route middleware.
+     *
+     * These middleware may be assigned to groups or used individually.
+     */
+    'routeMiddleware' => [
+        'auth' => \App\Middlewares\Auth::class,
+        'auth.jwt' => \App\Middlewares\Jwt::class,
+        'csrf' => \App\Middlewares\Csrf::class,
+    ],
+
+];
