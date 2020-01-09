@@ -26,7 +26,7 @@ return [
         Nur\Providers\Log::class,
         Nur\Providers\Hash::class,
         Nur\Providers\Validation::class,
-        Nur\Providers\Cache::class,
+        // Nur\Providers\Cache::class,
         // Nur\Providers\Translation::class,
         // Nur\Providers\Pdox::class,
         // Nur\Providers\Html::class,
