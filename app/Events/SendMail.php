@@ -1,8 +1,10 @@
 <?php
 
-namespace App\Listeners;
+namespace App\Events;
 
-class SendMail
+use Nur\Event\Base;
+
+class SendMail extends Base
 {
     /**
      * This method will be triggered

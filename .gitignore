@@ -6,10 +6,6 @@
 .vagrant/
 node_modules/
 vendor/
-storage/cache/blade/*.php
-storage/cache/html/*.cache
-storage/cache/sql/*.cache
-storage/log/*.log
 database/*.sqlite
 database/*.sqlite3
 npm-debug.log

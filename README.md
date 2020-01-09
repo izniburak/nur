@@ -26,9 +26,15 @@ nur - simple framework for PHP
     - Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/queries))
     - Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/blade))
     - Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
+    - Laravel Cache support. (currently just File, Array and Database drivers.) ([Laravel Cache](https://laravel.com/docs/cache)) 
+    - Laravel Hash and Encrypt support. ([Laravel Hashing](https://laravel.com/docs/hashing))
     - Collections support. ([Laravel Collections](https://laravel.com/docs/collections))
     - Useful array and string helpers. ([Laravel Helpers](https://laravel.com/docs/helpers))
-- Events/Listeners, Basic Logger, Request Validation, Html/Form Builder, Simple Cache, Hashing, Encrypting etc...
+- Events/Listeners
+- Basic Logger
+- Request Validation
+- Html/Form Builder
+- etc...
 
 ## nur core
 If you want to examine Nur's core files, you can follow this link: 

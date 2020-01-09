@@ -23,14 +23,13 @@ return [
         Nur\Providers\Database::class,
         Nur\Providers\Session::class,
         Nur\Providers\Cookie::class,
-        Nur\Providers\Listener::class,
         Nur\Providers\Log::class,
         Nur\Providers\Hash::class,
         Nur\Providers\Validation::class,
+        Nur\Providers\Cache::class,
         // Nur\Providers\Translation::class,
         // Nur\Providers\Pdox::class,
         // Nur\Providers\Html::class,
-        // Nur\Providers\Cache::class,
 
         /*
         * Application Service Providers...
@@ -60,23 +59,10 @@ return [
         'Sql'         => Nur\Facades\Sql::class,
         'DB'          => Nur\Facades\DB::class,
         'Hash'        => Nur\Facades\Hash::class,
+        'Cache'       => Nur\Facades\Cache::class,
         'Log'         => Nur\Facades\Log::class,
         'Validation'  => Nur\Facades\Validation::class,
-
-    ],
-
-    /*
-    |--------------------------------------------------------------------------
-    | Listeners
-    |--------------------------------------------------------------------------
-    | The listener lists specify events that will trigger when called it.
-    | This events could call with event() method and add parameters in them.
-    |
-    */
-
-    'listeners' => [
-
-        // 'sendmail'   => [ App\Listeners\SendMail::class ],
+        'File'        => Nur\Facades\File::class,
 
     ],
 
