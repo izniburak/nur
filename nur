@@ -12,8 +12,8 @@
 require __DIR__.'/vendor/autoload.php';
 
 use Nur\Kernel\Application;
-use Nur\Console\Command;
-use Symfony\Component\Console\Application as ConsoleApplication;
+use App\Console\Application as ConsoleApplication;
+use Symfony\Component\Console\Application as SymfonyApplication;
 
 $app = new Application;
 
@@ -21,8 +21,10 @@ define('NUR_VERSION', $app->version());
 define('ROOT', $app->root());
 define('DOC_ROOT', $app->docRoot());
 define('BASE_FOLDER', $app->baseFolder());
+define('APP_ENV', strtolower(config('app.env')));
+date_default_timezone_set(config('app.timezone'));
 
-$console = new Command(new ConsoleApplication("      _ __  _   _ _ __
+$console = new ConsoleApplication(new SymfonyApplication("      _ __  _   _ _ __
      | '_ \| | | | '__|
      | | | | |_| | |
      |_| |_|\__,_|_| v" . NUR_VERSION . "
