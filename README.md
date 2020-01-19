@@ -29,7 +29,7 @@ nur - simple framework for PHP
     - Laravel Cache support. (currently just File, Array and Database drivers.) ([Laravel Cache](https://laravel.com/docs/cache)) 
     - Laravel Hash and Encrypt support. ([Laravel Hashing](https://laravel.com/docs/hashing))
     - Collections support. ([Laravel Collections](https://laravel.com/docs/collections))
-    - Useful array and string helpers. ([Laravel Helpers](https://laravel.com/docs/helpers))
+    - Useful Array and String helpers. (Arr, Str and more...) ([Laravel Helpers](https://laravel.com/docs/helpers))
 - Events/Listeners
 - Basic Logger
 - Request Validation

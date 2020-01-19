@@ -9,7 +9,7 @@ return [
      *
      */
     'middleware' => [
-
+        \App\Middlewares\Csrf::class,
     ],
 
 
@@ -36,7 +36,6 @@ return [
     'routeMiddleware' => [
         'auth' => \App\Middlewares\Auth::class,
         'auth.jwt' => \App\Middlewares\Jwt::class,
-        'csrf' => \App\Middlewares\Csrf::class,
     ],
 
 ];
