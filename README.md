@@ -30,6 +30,7 @@ nur - simple framework for PHP
     - Laravel Hash and Encrypt support. ([Laravel Hashing](https://laravel.com/docs/hashing))
     - Collections support. ([Laravel Collections](https://laravel.com/docs/collections))
     - Useful Array and String helpers. (Arr, Str and more...) ([Laravel Helpers](https://laravel.com/docs/helpers))
+- Mail Component. ([PHPMailer](https://github.com/PHPMailer/PHPMailer))
 - Events/Listeners
 - Basic Logger
 - Request Validation

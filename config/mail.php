@@ -11,7 +11,7 @@ return [
     | sending of e-mail. You may specify which one you're using throughout
     | your application here. By default, Nur FW is setup for SMTP mail.
     |
-    | Supported: "smtp", "sendmail"
+    | Supported: "smtp", "sendmail", "mail"
     |
     */
 
@@ -96,7 +96,7 @@ return [
     |
     */
 
-    'charset' => env('MAIL_CHARSET', 'utf8'),
+    'charset' => env('MAIL_CHARSET', 'utf-8'),
 
     /*
     |--------------------------------------------------------------------------

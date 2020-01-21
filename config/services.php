@@ -26,6 +26,7 @@ return [
         Nur\Providers\Log::class,
         Nur\Providers\Hash::class,
         Nur\Providers\Validation::class,
+        Nur\Providers\Mail::class,
         // Nur\Providers\Cache::class,
         // Nur\Providers\Translation::class,
         // Nur\Providers\Pdox::class,
@@ -63,6 +64,7 @@ return [
         'Log'         => Nur\Facades\Log::class,
         'Validation'  => Nur\Facades\Validation::class,
         'File'        => Nur\Facades\File::class,
+        'Mail'        => Nur\Facades\Mail::class,
 
     ],
 
