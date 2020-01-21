@@ -25,6 +25,7 @@ nur - simple framework for PHP
     - Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/eloquent))
     - Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/queries))
     - Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/blade))
+    - Laravel Localization Support (with Translate)  [Laravel Localization](https://laravel.com/docs/localization)
     - Laravel Eloquent Migration System support with PHPMig. ([Laravel Migration](https://laravel.com/docs/migrations) - [PHPMig](https://github.com/izniburak/nur-migration))
     - Laravel Cache support. (currently just File, Array and Database drivers.) ([Laravel Cache](https://laravel.com/docs/cache)) 
     - Laravel Hash and Encrypt support. ([Laravel Hashing](https://laravel.com/docs/hashing))
