@@ -12,13 +12,14 @@ nur - simple framework for PHP
 [![Latest Unstable Version](https://poser.pugx.org/izniburak/nur-core/v/unstable.svg)](https://packagist.org/packages/izniburak/nur)
 [![License](https://poser.pugx.org/izniburak/nur/license.svg)](https://packagist.org/packages/izniburak/nur)
 
-> Nur Framework can be a preference for your small (maybe medium) projects. If you say; "I'll make a bigger project.", I suggest you use a full-stack framework. :) e.g: Symfony, Laravel...
+> Nur Framework has been created by using some most popular parts of the popular PHP Frameworks like Laravel and Symfony. 
+> So, It can be a preference for your small (maybe medium) projects. If you say "I'll make a bigger project.", I suggest you use a full-stack framework. :) e.g: Laravel, Symfony...
 
 ### features
 - Model - View - Controller
 - Easy command line application support. _(NUR Cli App)_
 - Routing system and basic Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
-- Symfony Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
+- **Symfony** Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
 - PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
 - Authentication component. (with **JWT** and **Basic Auth**)
 - Some **Laravel 6.x** Packages supports.
@@ -36,7 +37,7 @@ nur - simple framework for PHP
 - Basic Logger
 - Request Validation
 - Html/Form Builder
-- etc...
+- and more...
 
 ## nur core
 If you want to examine Nur's core files, you can follow this link: 
@@ -74,9 +75,9 @@ $ php nur
 documentation page: [nur docs][doc-url] (coming soon...)
 
 ## todo
-- Write test
 - Write documentation
-- ...
+- Write test
+- Write example project
 
 ## support
 [izniburak's homepage][author-url]
@@ -93,8 +94,7 @@ documentation page: [nur docs][doc-url] (coming soon...)
 ## contributors
 - [izniburak](https://github.com/izniburak) izni burak demirtaş - creator, maintainer
 
-[paypal-donate-url]: http://burakdemirtas.org
 [mit-url]: http://opensource.org/licenses/MIT
 [doc-url]: javascript:;
-[author-url]: http://burakdemirtas.org
+[author-url]: https://burakdemirtas.org
 [twitter-url]: https://twitter.com/izniburak

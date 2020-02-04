@@ -14,7 +14,7 @@ class Auth extends Middleware
      */
     public function handle()
     {
-        if (! auth()->check()) {
+        if (!auth()->check()) {
             return redirect('login');
         }
 

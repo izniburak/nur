@@ -15,7 +15,7 @@ class TestController extends Controller
     public function main(): Response
     {
         return response()->json([
-            'Main Method'
+            'Main Method',
         ]);
     }
 
@@ -28,7 +28,7 @@ class TestController extends Controller
     public function getCreate(): Response
     {
         return response()->json([
-            'Create Method'
+            'Create Method',
         ]);
     }
 
@@ -43,7 +43,7 @@ class TestController extends Controller
     public function postStore(Request $request): Response
     {
         return response()->json([
-            'Store Method'
+            'Store Method',
         ]);
     }
 
@@ -58,7 +58,7 @@ class TestController extends Controller
     public function getShow(int $id): Response
     {
         return response()->json([
-            'Show Method'
+            'Show Method',
         ]);
     }
 
@@ -73,7 +73,7 @@ class TestController extends Controller
     public function getEdit(int $id): Response
     {
         return response()->json([
-            'Edit Method'
+            'Edit Method',
         ]);
     }
 
@@ -89,7 +89,7 @@ class TestController extends Controller
     public function putUpdate(Request $request, int $id): Response
     {
         return response()->json([
-            'Update Method'
+            'Update Method',
         ]);
     }
 
@@ -104,7 +104,7 @@ class TestController extends Controller
     public function deleteDestroy(int $id): Response
     {
         return response()->json([
-            'Destroy Method'
+            'Destroy Method',
         ]);
     }
 }

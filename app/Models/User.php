@@ -7,6 +7,7 @@ use Nur\Database\Model;
 class User extends Model
 {
 	protected $table = 'users';
+
     public $timestamps = true;
 
 	/**
@@ -17,7 +18,7 @@ class User extends Model
 	protected $fillable = [
 		'name', 'email', 'password',
 	];
-	
+
 	/**
 	 * The attributes that should be hidden for arrays.
 	 *

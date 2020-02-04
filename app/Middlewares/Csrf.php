@@ -15,9 +15,9 @@ class Csrf extends Middleware
      */
     public function handle()
     {
-        if (! in_array(request()->method(), ['HEAD', 'GET', 'OPTIONS'])) {
+        if (!in_array(request()->method(), ['HEAD', 'GET', 'OPTIONS'])) {
             $token = request()->input('_token') ?: request()->header('X-CSRF-TOKEN');
-            if (! csrf_check($token)) {
+            if (!csrf_check($token)) {
                 throw new BadRequestHttpException;
             }
         }
