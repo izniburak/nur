@@ -3,12 +3,6 @@
         Options -MultiViews -Indexes
     </IfModule>
 
-    <Files ~ "^.*\.(env|conf).*">
-        order allow,deny
-        deny from all
-        satisfy all
-    </Files>
-
     RewriteEngine On
 
     # Handle Authorization Header
@@ -24,5 +18,4 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
-    RewriteRule ^(app/|vendor/|storage/|config/|database/) - [F,L,NC]
 </IfModule>

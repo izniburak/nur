@@ -9,5 +9,5 @@
  */
 
 # FRAMEWORK START
-require_once __DIR__ . '/vendor/autoload.php';
-require_once __DIR__ . '/vendor/izniburak/nur-core/src/bootstrap.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+require_once __DIR__ . '/../vendor/izniburak/nur-core/src/bootstrap.php';
