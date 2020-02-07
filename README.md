@@ -12,7 +12,7 @@ nur - simple framework for PHP
 [![Latest Unstable Version](https://poser.pugx.org/izniburak/nur-core/v/unstable.svg)](https://packagist.org/packages/izniburak/nur)
 [![License](https://poser.pugx.org/izniburak/nur/license.svg)](https://packagist.org/packages/izniburak/nur)
 
-> Nur Framework has been created by using some most popular parts of the popular PHP Frameworks like Laravel and Symfony. 
+> Nur Framework has been created and adapted by using some most popular parts of the popular PHP Frameworks like Laravel and Symfony. 
 > So, It can be a preference for your small (maybe medium) projects. If you say "I'll make a bigger project.", I suggest you use a full-stack framework. :) e.g: Laravel, Symfony...
 
 ### features
@@ -55,11 +55,11 @@ If you want to examine Nur's core files, you can follow this link:
 - JSON PHP Extension
 
 ## install
-create project via composer ("app" is application folder name):
+create project via `composer` (`app` is application folder name):
 ```
-$ composer create-project izniburak/nur app
-$ cd app
-$ php nur
+$ composer create-project izniburak/nur your-app
+$ cd your-app
+$ php nur serve
 ```
 
 or run the following command directly.
@@ -68,8 +68,10 @@ or run the following command directly.
 $ git clone https://github.com/izniburak/nur.git
 $ cd nur
 $ composer install
-$ php nur
+$ php nur serve
 ```
+
+Okay, you can see your application on the browser. (127.0.0.1:8000)
 
 ## docs
 documentation page: [nur docs][doc-url] (coming soon...)
