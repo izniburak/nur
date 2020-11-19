@@ -37,7 +37,7 @@ return [
         'enabled' => false,
 
         // JWT Authentication Secret
-        'secret' => env('JWT_SECRET'),
+        'secret' => env('JWT_SECRET', 'secret'),
 
         // JWT time to live (in minutes)
         'ttl' => env('JWT_TTL', 60),
@@ -66,11 +66,11 @@ return [
 
     'basic' => [
 
-        'credentials' => ['email', 'password'],
         'driver'      => 'database',
+        'credentials' => ['email', 'password'],
 
-        // 'credentials' => [env('BASIC_AUTH_USER'), env('BASIC_AUTH_PASS')],
         // 'driver'      => 'default',
+        // 'credentials' => [env('BASIC_AUTH_USER'), env('BASIC_AUTH_PASS')],
 
     ],
 

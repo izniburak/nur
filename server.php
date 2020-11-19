@@ -7,9 +7,7 @@
  * @license  The MIT License (MIT) - <http://opensource.org/licenses/MIT>
  */
 
-$uri = urldecode(
-    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
-);
+$uri = urldecode(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 
 // Adapted from server.php file of Laravel Framework
 // @see https://github.com/laravel/laravel/blob/master/server.php
