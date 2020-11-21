@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use Nur\Controller\Controller as BaseController;
+use Nur\Http\Controller as BaseController;
 
 class Controller extends BaseController
 {

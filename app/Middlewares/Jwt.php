@@ -3,7 +3,7 @@
 namespace App\Middlewares;
 
 use Nur\Auth\Jwt\JwtException;
-use Nur\Middleware\Middleware;
+use Nur\Http\Middleware;
 
 class Jwt extends Middleware
 {

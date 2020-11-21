@@ -107,4 +107,14 @@ class TestController extends Controller
             'Destroy Method',
         ]);
     }
+
+    public function postAccess(Request $request)
+    {
+        $auth = auth()->jwt()->login([
+            'email' => 'aaa',
+        ]);
+        return response()->json([
+           'access_token' => $auth,
+        ]);
+    }
 }

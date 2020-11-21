@@ -2,7 +2,7 @@
 
 namespace App\Middlewares;
 
-use Nur\Middleware\Middleware;
+use Nur\Http\Middleware;
 
 class Auth extends Middleware
 {

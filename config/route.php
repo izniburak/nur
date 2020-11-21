@@ -12,22 +12,6 @@ return [
         \App\Middlewares\Csrf::class,
     ],
 
-
-    /**
-     * The application's route middleware groups.
-     */
-    'middlewareGroups' => [
-
-        'web' => [
-
-        ],
-
-        'api' => [
-
-        ],
-
-    ],
-
     /**
      * The application's route middleware.
      *
@@ -36,6 +20,21 @@ return [
     'routeMiddleware' => [
         'auth' => \App\Middlewares\Auth::class,
         'auth.jwt' => \App\Middlewares\Jwt::class,
+    ],
+
+    /**
+     * The application's route middleware groups.
+     */
+    'middlewareGroup' => [
+
+        'web' => [
+
+        ],
+
+        'api' => [
+            'auth.jwt'
+        ],
+
     ],
 
 ];
