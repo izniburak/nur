@@ -21,7 +21,7 @@
   ],
   "require": {
     "php": "^7.3|^8.0",
-    "izniburak/nur-core": "dev-master"
+    "izniburak/nur-core": "^3.0"
   },
   "require-dev": {
     "doctrine/dbal": "^2.6|^3.0",
