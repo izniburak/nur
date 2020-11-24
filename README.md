@@ -12,17 +12,18 @@ nur - simple framework for PHP
 [![Latest Unstable Version](https://poser.pugx.org/izniburak/nur-core/v/unstable.svg)](https://packagist.org/packages/izniburak/nur)
 [![License](https://poser.pugx.org/izniburak/nur/license.svg)](https://packagist.org/packages/izniburak/nur)
 
-> Nur Framework has been created and adapted by using some most popular parts of the popular PHP Frameworks like Laravel and Symfony. 
+> Nur Framework has been created for just fun and adapted by using some most popular parts of the popular PHP Frameworks like Laravel and Symfony. 
+> It has a simple but powerful infrastructure. It contains a lot of component in order to prepare web applications.
 > So, It can be a preference for your small (maybe medium) projects. If you say "I'll make a bigger project.", I suggest you use a full-stack framework. :) e.g: Laravel, Symfony...
 
 ### features
 - Model - View - Controller
 - Easy command line application support. _(NUR Cli App)_
-- Routing system and basic Middleware support. ([PHP-Router](https://github.com/izniburak/php-router))
+- Routing component. ([PHP-Router](https://github.com/izniburak/php-router))
 - **Symfony** Request and Response components. ([Symfony HttpFoundation](https://symfony.com/doc/current/components/http_foundation.html))
-- PDOx Query Builder Class. ([PDOx](https://github.com/izniburak/pdox))
+- PDOx Query Builder. ([PDOx](https://github.com/izniburak/pdox))
 - Authentication component. (with **JWT** and **Basic Auth**)
-- Some **Laravel 6.x** Packages supports.
+- Some **Laravel 8.x** Packages supports.
     - Eloquent ORM support. ([Laravel Eloquent ORM](https://laravel.com/docs/eloquent))
     - Laravel Query Builder support. ([Laravel Query Builder](https://laravel.com/docs/queries))
     - Blade Template Engine support. ([Laravel Blade](https://laravel.com/docs/blade))
@@ -45,7 +46,7 @@ If you want to examine Nur's core files, you can follow this link:
 [izniburak/nur-core](https://github.com/izniburak/nur-core) 
 
 ## server requirements
-- PHP >= 7.2
+- PHP >= ^7.3|^8.0
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - Mbstring PHP Extension
@@ -53,6 +54,8 @@ If you want to examine Nur's core files, you can follow this link:
 - XML PHP Extension
 - Ctype PHP Extension
 - JSON PHP Extension
+- Fileinfo PHP Extension
+- BCMath PHP Extension
 
 ## install
 create project via `composer` (`app` is application folder name):
