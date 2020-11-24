@@ -9,7 +9,7 @@ return [
      *
      */
     'middleware' => [
-        \App\Middlewares\Csrf::class,
+        // \Nur\Http\Middleware\CorsMiddleware::class,
     ],
 
     /**
@@ -18,8 +18,8 @@ return [
      * These middleware may be assigned to groups or used individually.
      */
     'routeMiddleware' => [
-        'auth' => \App\Middlewares\Auth::class,
-        'auth.jwt' => \App\Middlewares\Jwt::class,
+        'auth' => \Nur\Http\Middleware\AuthMiddleware::class,
+        'auth.jwt' => \Nur\Http\Middleware\JwtMiddleware::class,
     ],
 
     /**
@@ -28,11 +28,11 @@ return [
     'middlewareGroup' => [
 
         'web' => [
-
+            // \Nur\Http\Middleware\CsrfMiddleware::class,
         ],
 
         'api' => [
-            'auth.jwt'
+            'auth.jwt',
         ],
 
     ],

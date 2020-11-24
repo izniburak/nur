@@ -20,15 +20,14 @@ return [
         */
         Nur\Providers\Auth::class,
         Nur\Providers\Blade::class,
+        // Nur\Providers\Cache::class,
+        // Nur\Providers\Cookie::class,
         Nur\Providers\Database::class,
-        Nur\Providers\Session::class,
-        Nur\Providers\Cookie::class,
-        Nur\Providers\Log::class,
         Nur\Providers\Hash::class,
         Nur\Providers\Mail::class,
-        // Nur\Providers\Cache::class,
-        // Nur\Providers\Translation::class,
         // Nur\Providers\Pdox::class,
+        Nur\Providers\Session::class,
+        // Nur\Providers\Translation::class,
 
         /*
         * Application Service Providers...
@@ -51,18 +50,15 @@ return [
     'aliases' => [
 
         'Auth'        => Nur\Facades\Auth::class,
-        'Jwt'         => Nur\Facades\Jwt::class,
-        'Cookie'      => Nur\Facades\Cookie::class,
-        'Session'     => Nur\Facades\Session::class,
+        // 'Cache'    => Nur\Facades\Cache::class,
         'Config'      => Nur\Facades\Config::class,
-        // 'Sql'      => Nur\Facades\Sql::class,
+        // 'Cookie'   => Nur\Facades\Cookie::class,
         'DB'          => Nur\Facades\DB::class,
         'Hash'        => Nur\Facades\Hash::class,
-        // 'Cache'    => Nur\Facades\Cache::class,
-        'Log'         => Nur\Facades\Log::class,
-        'Validation'  => Nur\Facades\Validation::class,
-        'File'        => Nur\Facades\File::class,
+        'Jwt'         => Nur\Facades\Jwt::class,
         'Mail'        => Nur\Facades\Mail::class,
+        // 'Pdox'     => Nur\Facades\Sql::class,
+        'Session'     => Nur\Facades\Session::class,
 
     ],
 

@@ -8,6 +8,12 @@
  * @license  The MIT License (MIT) - <http://opensource.org/licenses/MIT>
  */
 
-# FRAMEWORK START
+ob_start();
+
+// Autoload Dependencies
 require_once __DIR__ . '/../vendor/autoload.php';
-require_once __DIR__ . '/../vendor/izniburak/nur-core/src/bootstrap.php';
+
+/** @var \Nur\Kernel\Application $app */
+$app = require_once __DIR__ . '/../app/bootstrap.php';
+
+$app->start(APP_ENV);
