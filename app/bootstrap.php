@@ -1,5 +1,8 @@
 <?php
 
+ob_start();
+session_start();
+
 use Nur\Kernel\Application;
 
 $app = new Application;

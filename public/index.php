@@ -8,8 +8,6 @@
  * @license  The MIT License (MIT) - <http://opensource.org/licenses/MIT>
  */
 
-ob_start();
-
 // Autoload Dependencies
 require_once __DIR__ . '/../vendor/autoload.php';
 
