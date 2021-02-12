@@ -2,9 +2,9 @@
 
 namespace App\Events;
 
-use Nur\Event\Base;
+use Nur\Event\EventInterface;
 
-class SendMail extends Base
+class SendMail implements EventInterface
 {
     /**
      * This method will be triggered
@@ -12,7 +12,7 @@ class SendMail extends Base
      *
      * @return mixed
      */
-    public function handle()
+    public function handle(): bool
     {
         return true;
     }
