@@ -42,6 +42,9 @@ return [
         // JWT time to live (in minutes)
         'ttl' => env('JWT_TTL', 60),
 
+        // JWT time to live for Refresh Token (in minutes)
+        'refresh_ttl' => env('JWT_REFRESH_TTL', (60*24*30*6)),
+
         // JWT hashing algorithm
         'alg' => env('JWT_ALGO', 'HS256'),
 

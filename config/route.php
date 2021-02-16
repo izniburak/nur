@@ -10,6 +10,8 @@ return [
      */
     'middleware' => [
         // \Nur\Http\Middleware\CorsMiddleware::class,
+        \Nur\Http\Middleware\TrimStrings::class,
+        \Nur\Http\Middleware\ConvertEmptyStringsToNull::class,
     ],
 
     /**
