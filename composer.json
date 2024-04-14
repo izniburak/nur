@@ -15,24 +15,27 @@
     {
       "name": "İzni Burak Demirtaş",
       "email": "info@burakdemirtas.org",
-      "homepage": "https://burakdemirtas.org",
+      "homepage": "https://buki.dev",
       "role": "Creator"
     }
   ],
   "require": {
-    "php": "^7.3|^8.0",
-    "izniburak/nur-core": "^3.0"
+    "php": "^8.1",
+    "izniburak/nur-core": "^4.0"
   },
   "require-dev": {
-    "doctrine/dbal": "^2.6|^3.0",
-    "filp/whoops": "^2.8"
+    "doctrine/dbal": "^3.5.1",
+    "filp/whoops": "^2.15",
+    "fakerphp/faker": "^1.21"
   },
   "autoload": {
     "psr-4": {
-      "App\\": "app/"
+      "App\\": "app/",
+      "Database\\Factories\\": "database/factories/",
+      "Database\\Seeders\\": "database/seeders/"
     },
     "classmap": [
-      "database/seeds"
+      "database/seeders"
     ]
   },
   "scripts": {

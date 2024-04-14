@@ -1,5 +1,7 @@
 <?php
 
+namespace Database\Seeders;
+
 use Nur\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
