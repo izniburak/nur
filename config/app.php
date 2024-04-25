@@ -137,7 +137,7 @@ return [
         */
         Nur\Providers\Auth::class,
         Nur\Providers\Blade::class,
-        // Nur\Providers\Cache::class,
+        Nur\Providers\Cache::class,
         Nur\Providers\Database::class,
         Nur\Providers\Hash::class,
         Nur\Providers\Mail::class,
@@ -163,13 +163,8 @@ return [
 
     'aliases' => [
 
-        'Auth'        => Nur\Facades\Auth::class,
+        // 'Auth'     => Nur\Facades\Auth::class,
         // 'Cache'    => Nur\Facades\Cache::class,
-        'Config'      => Nur\Facades\Config::class,
-        'DB'          => Nur\Facades\DB::class,
-        'Hash'        => Nur\Facades\Hash::class,
-        'Jwt'         => Nur\Facades\Jwt::class,
-        'Mail'        => Nur\Facades\Mail::class,
 
     ],
 

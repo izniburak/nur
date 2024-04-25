@@ -15,6 +15,6 @@ class IndexController extends Controller
      */
     function main(Request $request): Response
     {
-        return blade('hello');
+        return view('hello');
     }
 }
